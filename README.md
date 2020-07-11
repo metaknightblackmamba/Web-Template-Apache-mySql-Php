@@ -10,12 +10,12 @@ $ ./build.sh
 ```
 
 ## WINDOWS 10
-Install docker-compose, [docker-compose install](https://docs.docker.com/compose/install/), then launch build.ps1
-Vérify your install on powershell prompt
+Install docker-compose, [docker-compose install](https://docs.docker.com/compose/install/), then launch build.ps1  
+Verify your install on powershell prompt  
 ```
 $ docker-compose -v
 ```
-Then
+Then  
 ```
 $ ./build.ps1
 ```
