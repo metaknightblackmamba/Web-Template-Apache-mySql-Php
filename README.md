@@ -10,14 +10,15 @@ $ ./build.sh
 ```
 
 ## WINDOWS 10
-Install docker-compose, [docker-compose install](https://docs.docker.com/compose/install/), then launch build.ps1  
-Verify your install on powershell prompt  
+Install docker-compose, [docker-compose install](https://docs.docker.com/compose/install/), then by opening up a cmd prompt or PowerShell console, and run the following command:  
 ```
 $ docker-compose -v
+```  
+If you did not receive an error, you are good to go. If you did, please make sure you install correctly docker and docker-compose  
+Then run cmd below on cmd prompt or PowerShell console to start the project:  
+(put yourself at the root of the project directory)  
 ```
-Then  
-```
-$ ./build.ps1
+$ docker-compose up -build
 ```
 
 ## Info
