@@ -1,4 +1,4 @@
-# testProject
+# Web Project Template
 Test php/bdd/Web project
 
 ## Setup
