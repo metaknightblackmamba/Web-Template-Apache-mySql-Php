@@ -2,6 +2,7 @@ version: "3.2"
 services:
   php:
     build: './php/'
+    container_name: php
     networks:
       - backend
     volumes:
@@ -9,6 +10,7 @@ services:
       
   apache:
     build: './apache/'
+    container_name: apache
     depends_on:
       - php
       - mysql
@@ -22,6 +24,7 @@ services:
 
   mysql:
     image: mysql:latest
+    container_name: mysql
     volumes:
       - ./query.sql:/etc/mysql/data/query.sql:rw
     networks:

@@ -10,10 +10,10 @@ while [ $x -gt 0 ]
 do
 sleep 1s
 clear
-echo "$x seconds until blast off"
+echo "$x seconds until data are push to mysql container"
 x=$(( $x - 1 ))
 done
-docker exec testproject_mysql_1 /bin/sh -c "mysql -u root --password='rootpassword' < /etc/mysql/data/query.sql"
+docker exec mysql /bin/sh -c "mysql -u root --password='rootpassword' < /etc/mysql/data/query.sql"
 echo "Data of query.sql were insert to database 'TEST'"
 
 
