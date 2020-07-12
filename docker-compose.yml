@@ -6,6 +6,7 @@ services:
       - backend
     volumes:
       - ./public_html/:/var/www/html/
+      
   apache:
     build: './apache/'
     depends_on:
