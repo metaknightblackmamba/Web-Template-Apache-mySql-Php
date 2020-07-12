@@ -22,6 +22,7 @@ $ docker-compose up -build
 ```
 
 ## Info
+* Example Database and Data are automatic push to mysql container, so if you want to remove it, comment the line code in build.sh 
 * UI phpmyadmin => localhost:8081
 * Home Web site Srv APACHE => localhost:8080
 * Put all your website in the folder public_html

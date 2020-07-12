@@ -18,12 +18,16 @@ services:
       - "8080:80"
     volumes:
       - ./public_html/:/var/www/html/
+
   mysql:
-    image: mysql:5.6.40
+    image: mysql:latest
+    volumes:
+      - ./query.sql:/etc/mysql/data/query.sql:rw
     networks:
       - backend
     environment:
       - MYSQL_ROOT_PASSWORD=rootpassword
+
   app:
     depends_on:
      - mysql
@@ -36,6 +40,7 @@ services:
      - backend
     environment:
       PMA_HOST: mysql
+
 networks:
   frontend:
   backend:
